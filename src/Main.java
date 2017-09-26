@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -27,9 +28,11 @@ class Choice{
             }
         }
 
-        int b[] = new int[]{maxSum, leftIndex, rightIndex};
-        List list = Arrays.asList(b);
-        return list;
+        ArrayList<Integer> result = new ArrayList<>();
+        result.add(maxSum);
+        result.add(leftIndex);
+        result.add(rightIndex);
+        return result;
     }
 
 }
